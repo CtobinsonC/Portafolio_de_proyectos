@@ -464,7 +464,9 @@ export default async function Home() {
             </div>
           ) : (
             <div className="grid gap-6 md:grid-cols-2">
-              {projects.map((project) => {
+              {projects
+                .filter(project => !project.name.toLowerCase().includes('portafolio'))
+                .map((project) => {
                 const liveUrl = getProjectLiveUrl(project);
                 const primaryUrl = liveUrl ?? project.html_url;
 
