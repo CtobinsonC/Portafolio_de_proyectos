@@ -277,7 +277,7 @@ export default async function Home() {
                     </div>
                     <div className="mt-6 flex items-center gap-4 text-white/85">
                       <Link
-                        href="mailto:ctobinsonc.dev@gmail.com"
+                        href="mailto:[EMAIL_ADDRESS]"
                         className="transition-opacity hover:opacity-80"
                       >
                         <Mail className="h-4 w-4" />
