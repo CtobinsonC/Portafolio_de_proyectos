@@ -381,9 +381,9 @@ export default async function Home() {
               </p>
             </div>
             <div className="space-y-6 rounded-3xl border border-emerald-500/20 bg-[#030509]/90 p-8 shadow-[0_40px_90px_-60px_rgba(5,8,15,0.9)]">
-              {EXPERIENCES.map((experience) => (
-                <div key={experience.date} className="flex gap-6">
-                  <div className="mt-1 h-10 w-10 rounded-full border border-emerald-400/40 text-center text-sm font-semibold leading-10 text-emerald-200">
+              {EXPERIENCES.map((experience, index) => (
+                <div key={`${experience.date}-${index}`} className="flex gap-6">
+                  <div className="mt-1 flex-none h-10 w-10 rounded-full border border-emerald-400/40 text-center text-sm font-semibold leading-10 text-emerald-200">
                     {experience.date}
                   </div>
                   <div className="space-y-2">
