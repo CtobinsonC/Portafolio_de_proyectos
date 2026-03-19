@@ -19,13 +19,22 @@ const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USER}/repos?sort=u
 
 export const PROJECT_IMAGE_MAP: Record<string, string> = {
   "proyecto-pagina-de-noticias-de-tecnologias": "/projects/Pagina_de_noticias.png",
-  "proyecto-analisis-de-datos-analisis-de-ventas-de-ecommerce": "/projects/Dashboard_Analisis_de_datos.png",
   "batatabit-lading-page-criptomonedas": "/projects/Batatabit.png",
   "proyecto-css-google": "/projects/Screenshot_2025-11-13_181750.png",
-  "proyecto-analisis-de-rotacion-de-productos": "/projects/analisis_rotacion_productos.png",
+  
+  // Data Engineering
   "etl-extraccion-de-datos-meteorologicos": "/projects/dashboard_de_ETL.png",
+  "gcp-data-enginner": "/projects/GCP-data-enginer.png",
+  "gcp-data-engineer-sf-powerbi": "/projects/Esquema general de arquitectura GCP data engineer sf pb.png",
+  "gcp-project-data-engineer-comprobante-de-pagos": "/projects/gcp-data-engineer-comprobante.jpg",
+  "implementacion-de-un-datamesh-para-una-plataforma-de-e-commerce": "/projects/gcp-implementacion-datamesh.png",
+  
+  // Data Analysis
+  "proyecto-analisis-de-datos-analisis-de-ventas-de-ecommerce": "/projects/Dashboard_Analisis_de_datos.png",
+  "proyecto-analisis-de-rotacion-de-productos": "/projects/analisis_rotacion_productos.png",
   "proyecto-reporte-de-calidad-de-datos": "/projects/reporte_de_calidad_de_datos.png",
   "proyecto-visualizacion-power-bi": "/projects/dashboard_visualizacion_power_bi.png",
+  
   "analisis-rotacion-productos": "/projects/analisis_rotacion_productos.png",
   "dashboard-de-etl": "/projects/dashboard_de_ETL.png",
 };
@@ -82,7 +91,7 @@ export function categorizeProject(repo: GitHubRepo): "data" | "dev" | "other" {
   const language = (repo.language || "").toLowerCase();
   const topics = (repo.topics || []).map(t => t.toLowerCase());
 
-  const dataKeywords = ["analisis", "data", "ventas", "dashboard", "visualizacion", "python", "jupyter", "pandas", "numpy", "tableau", "powerbi", "sql"];
+  const dataKeywords = ["analisis", "data", "ventas", "dashboard", "visualizacion", "python", "jupyter", "pandas", "numpy", "tableau", "powerbi", "sql", "etl", "gcp", "engineer", "datamesh", "pipeline", "arquitectura"];
   const devKeywords = ["web", "page", "react", "next", "javascript", "typescript", "css", "html", "api", "node", "express", "fullstack", "frontend", "backend"];
 
   const isData = dataKeywords.some(k => name.includes(k) || description.includes(k) || topics.includes(k)) || language === "python" || language === "jupyter notebook";

@@ -30,9 +30,9 @@ import { ProjectGrid } from "@/components/project-grid";
 
 const HERO_SERVICES: { title: string; description: string; icon: LucideIcon }[] = [
   {
-    title: "development",
+    title: "Ingenieria de datos",
     description:
-      "Construyo experiencias front-end y back-end a medida con un enfoque en rendimiento y accesibilidad.",
+      "Diseño e implemento pipelines ETL/ELT robustos en entornos multi-cloud (AWS, GCP, Azure), asegurando la escalabilidad y disponibilidad de los datos. Poseo un dominio avanzado en la administración de Bases de Datos (SQL Server, Oracle, MongoDB) y el diseño de arquitecturas de Data Warehouse y Cubos OLAP para analítica avanzada.",
     icon: Code,
   },
   {
@@ -42,35 +42,35 @@ const HERO_SERVICES: { title: string; description: string; icon: LucideIcon }[] 
     icon: Factory,
   },
   {
-    title: "data base",
+    title: "administracion de bases de datos",
     description:
       "Administro datos y creo pipelines analíticos respaldados por dashboards e informes accionables.",
     icon: Database,
   },
   {
-    title: "QA tester",
+    title: "analista de datos ",
     description:
-      "Realizo pruebas de software para identificar y corregir errores en el código.",
+      "Analizo datos y creo dashboards e informes accionables.",
     icon: Bug,
   },
 ];
 
 const SKILL_GROUPS = [
   {
-    title: "Desarrollo de Software",
+    title: "Ingenieria de datos",
     icon: Code,
     items:
-      "Visual Studio Code, HTML5, CSS, JavaScript, Python, React, Bootstrap, Node, Express, MERN stack, API REST, Git, Postman, SoapUI, Administración de servicios SMALLWORLD, GIS, FME",
+      " Google Cloud Platform (GCP) , BigQuery , Dataproc , Cloud Composer , PySpark , Airflow, AWS, Data mench, Arquitectura ETL/ELT , Docker. Data stream, dbt,  Azure databricks, Terraform, pySpark, SQL"
   },
   {
     title: "Base de datos",
     icon: Database,
-    items: "SQL Server, PostgreSQL, MongoDB, Firebase, Databricks",
+    items: "SQL Server, PostgreSQL, MongoDB, Firebase, mySQL, Oracle",
   },
   {
-    title: "Pruebas de software",
+    title: "Desarrollo de software",
     icon: Bug,
-    items: "Cypress, Selenium, Pruebas unitarias, TestLink",
+    items: "Python, React, Node.js, Express, JavaScript, TypeScript, HTML, CSS, Git, GitHub, Docker",
   },
   {
     title: "Administración Industrial",
@@ -86,24 +86,25 @@ const SKILL_GROUPS = [
   {
     title: "Análisis de datos",
     icon: ClipboardList,
-    items: "Tableau, PowerBI, Excel, Python, pySpark, SQL",
+    items: "Tableau, PowerBI, Excel, Python "
   }
 ];
 
 const EXPERIENCES = [
   {
     date: "2022",
-    role: "Desarrollador Fullstack",
-    company: "Freelance",
+    role: "Ingeniero de datos",
+    company: "implemental systems",
     description:
-      "Diseño y desarrollo de aplicaciones web enfocadas en experiencias rápidas, accesibles y con despliegues automatizados.",
+      "Diseñé, desarrollé y ejecuté la migración de pipelines de datos y servicios hacia entornos en la nube, garantizando la disponibilidad y el flujo eficiente de la información"
   },
   {
-    date: "2022",
-    role: "Frontend Developer",
-    company: "Proyectos personales",
+    date: "2023",
+    role: "Administrador de bases de datos",
+    company: "implemental systems",
     description:
-      "Implementación de interfaces reactivas, dashboards de datos y componentes reutilizables con Next.js y TypeScript.",
+      "Administración de DB : Administré y optimicé bases de datos Oracle SQL para clientes regionales, reduciendo lostiempos de ejecución de queries críticas en un 60% mediante el tuning de índices y procedimientos almacenados"
+
   },
   {
     date: "2022",
@@ -271,7 +272,7 @@ export default async function Home() {
                     <div className="space-y-3 text-left">
                       <p className="text-[26px] font-semibold text-white">Caleb Tobison C.</p>
                       <p className="text-sm uppercase tracking-[0.35em] text-emerald-400">
-                        Developer
+                        Data Engineer / Software Developer
                       </p>
                     </div>
                     <div className="mt-6 flex items-center gap-4 text-white/85">
@@ -305,7 +306,7 @@ export default async function Home() {
               <div className="flex flex-1 flex-col gap-10 px-8 py-12 text-left text-white sm:px-12 lg:px-16">
                 <div className="space-y-5">
                   <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-                    Analista de datos y desarrollador de software
+                    Ingeniero industrial / Ingeniero de datos / especialista en analisis de datos e informacion
                   </h2>
                   <div className="flex flex-wrap gap-6 text-sm text-emerald-300/85">
                     <span>5+ años de experiencia</span>
@@ -315,13 +316,21 @@ export default async function Home() {
                 </div>
                 <div className="space-y-4 text-base text-white/70">
                   <p>
-                    Ingeniero Industrial que conecta procesos, tecnología y negocio. Me especializo en
-                    desarrollo full stack con ReactJS y NodeJS, automatización de pruebas y análisis de
-                    datos para entregar productos digitales robustos y medibles.
+                    Profesional en datos con más de 4 años de experiencia especializándose en el ciclo de
+                    vida completo de la información. Amplia experiencia en el diseño e implementación de
+                    pipelines ETL/ELT robustos en entornos multi-cloud (AWS, GCP, Azure), asegurando la
+                    escalabilidad y disponibilidad de los datos. Poseo un dominio avanzado en la
+                    administración de Bases de Datos (SQL Server, Oracle, MongoDB) y el diseño de
+                    arquitecturas de Data Warehouse y Cubos OLAP para analítica avanzada.
+
                   </p>
                   <p>
-                    Combino habilidades estratégicas y técnicas para acompañar equipos en todo el ciclo de
-                    vida del producto, desde investigación y diseño hasta despliegue y observabilidad.
+                    Mi perfil se potencia con conocimiento y experiencia en Desarrollo de Software
+                    utilizando tecnologias (Node.js, React, Express), lo que me permite una visión 360° del
+                    dato: desde la ingesta y transformación con herramientas como dbt y Airflow, hasta su
+                    consumo eficiente en aplicaciones e interfaces de usuario. Soy un profesional orientado
+                    a la automatización de procesos y la optimización de queries para transformar datos
+                    crudos en activos estratégicos de negocio.
                   </p>
                 </div>
                 <div className="space-y-6">
@@ -352,23 +361,23 @@ export default async function Home() {
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
             <div className="space-y-6 text-base text-emerald-100/80">
               <p>
-                Soy Ingeniero Industrial con una base sólida en tecnologías de
-                la información y procesos industriales. He trabajado con bases de
-                datos relacionales y no relacionales, y me desempeño como
-                desarrollador full stack utilizando ReactJS y NodeJS.
+                Soy Profesional en Datos e Ingeniero Industrial, especializado en el ciclo de vida
+                completo de la información. Mi formación técnica y analítica me ha permitido
+                entender el negocio y traducirlo en arquitecturas tecnológicas eficientes,
+                escalables y orientadas a resultados.
               </p>
               <p>
-                Cuento con experiencia en pruebas funcionales y de
-                automatización con herramientas como Cypress, Jest y Selenium, y
-                conozco metodologías ágiles, administración de servidores y
-                soporte técnico. También aplico análisis de datos con Python y
-                soluciones de business intelligence para impulsar decisiones.
+                Destaco en el diseño de pipelines ETL/ELT robustos y despliegues en ecosistemas
+                multi-cloud (GCP, AWS, Azure). Me apasiona administrar bases de datos complejas,
+                además de estructurar Data Warehouses y Cubos OLAP utilizando herramientas
+                modernas como Python, dbt y Airflow para limpiar, transformar y asegurar la
+                calidad óptima del dato.
               </p>
               <p>
-                Me caracterizo por el trabajo en equipo, la capacidad de liderar
-                cambios y la motivación constante por mejorar procesos y
-                recursos. Mi objetivo es aportar a proyectos competitivos
-                mediante soluciones eficientes y un enfoque de mejora continua.
+                Mi visión 360° integra el conocimiento en desarrollo de software con la ingeniería
+                de datos avanzada. De esta forma, no solo garantizo flujos de ingesta precisos,
+                sino que también transformo la información en dashboards dinámicos e informes
+                accionables que impulsan la toma de decisiones estratégicas.
               </p>
             </div>
             <div className="space-y-6 rounded-3xl border border-emerald-500/20 bg-[#030509]/90 p-8 shadow-[0_40px_90px_-60px_rgba(5,8,15,0.9)]">
@@ -466,25 +475,78 @@ export default async function Home() {
         <Section id="experiencia" eyebrow="experiencia" title="Trayectoria profesional reciente." className="pl-6 pr-6 sm:pl-10 sm:pr-10 lg:pl-16 lg:pr-16">
           <div className="space-y-10 text-emerald-100/85">
             <div className="space-y-3">
-              <h3 className="text-2xl font-semibold text-white">Ingeniero de Software</h3>
+              <h3 className="text-2xl font-semibold text-white">Data Engineer / Software developer</h3>
               <p className="text-sm font-medium uppercase tracking-[0.25em] text-emerald-300/80">
-                Empresa Implemental Systems · Sep 2021 – Actualidad
+                Empresa Implemental Systems · Sep 2022 – Ene 2026
               </p>
               <p className="text-base leading-relaxed text-emerald-100/75">
-                Programación de requerimientos en Magik, implementación de sistemas GIS, soporte N1 y N2 Smallworld,
-                administración de servicios, análisis de datos y automatización con Python, web services, pruebas
-                unitarias y automatizadas, pruebas en API con SoapUI y Postman.
+                Diseñé, desarrollé y ejecuté la migración de pipelines de datos y servicios hacia entornos en la nube, garantizando la
+                disponibilidad y el flujo eficiente de la información. <br />
+                <br />
+                Administración de DB : "Administré y optimicé bases de datos Oracle/SQL para clientes regionales, reduciendo los
+                tiempos de ejecución de queries críticas en un 60% mediante el tuning de índices y procedimientos almacenados.
+                "<br />
+                <br />
+                Lideré procesos de migración de datos utilizando FME y automaticé la generación de reportes de calidad de datos. <br />
+                <br />
+                Automatización de KPIs : "Automaticé el análisis de peticiones Jboss, reduciendo el tiempo de generación de reportes
+                de KPIs de 3 días a solo 15 minutos.
+                "<br />
+                Aporté valor en la capa de aplicaciones mediante el desarrollo Full Stack (React JS, Angular JS, Node) y la
+                implementación de funcionalidades que incrementaron la velocidad de procesamiento en servicios Jboss y GSS. <br />
+                Creación y mantenimiento de Cubos OLAP (OnLine Analytical Processing) para analítica de BI (Business Intelligent). <br />
+                Administracion de Data Warehouse
               </p>
             </div>
             <div className="h-px w-full bg-emerald-400/20" aria-hidden />
             <div className="space-y-3">
-              <h3 className="text-2xl font-semibold text-white">Administrador SIG</h3>
+              <h3 className="text-2xl font-semibold text-white">Data enginner / data analyst</h3>
               <p className="text-sm font-medium uppercase tracking-[0.25em] text-emerald-300/80">
-                Servicios Industriales y Marítimos S.A.S · Mar 2019 – Jul 2021
+                Bitecso S.A.S · Mar 2020 – Mar 2021
               </p>
               <p className="text-base leading-relaxed text-emerald-100/75">
-                Gestión de calidad, ambiente y seguridad, control y planificación de mantenimientos, control de
-                inventarios, análisis de indicadores de gestión y administración de bases de datos.
+                ETL de Extracción de Datos de Sistemas ArcGIS | Claro Colombia
+                ETL ArcGIS para Claro : "Implementé un pipeline ETL para datos geoespacial complejos, automatizando la carga en
+                buckets y asegurando la calidad del 100% de los datos mediante validaciones con dbt. <br />
+                < br />
+                Dashboard de Salud de Negocio | Empresa del sector Turismo
+                Construí y desplegué un tablero de control integral conectando múltiples fuentes de información para monitorear en
+                tiempo real los KPIs críticos de la empresa, facilitando la toma de decisiones a nivel gerencial. <br />
+                <br />
+                Análisis de Rotación de Productos | E-commerce
+                Desarrollé un modelo de análisis utilizando SQL y Python para procesar históricos de ventas, identificando cuellos de
+                botella en el inventario y patrones de consumo para optimizar el stock. <br />
+                <br />
+                Reportes de Calidad de Datos | Seimar SAS
+                Creé scripts de automatización para la validación, limpieza y perfilado de grandes volúmenes de datos operativos,
+                garantizando la fiabilidad y exactitud de la información reportada a los stakeholders. <br />
+                <br />
+                Análisis de Acciones con Visualización en Power BI | ETB
+                Modelé y visualicé conjuntos de datos financieros y operativos en Power BI, transformando información cruda en
+                dashboards interactivos para el seguimiento de tendencias y el análisis de acciones. <br />
+                <br />
+                Pipeline para ETB : "Desarrollé un pipeline de extracción de logs de servicios Jboss hacia AWS, permitiendo el
+                procesamiento de +10GB de datos diarios con una latencia menor a 5 minutos.
+              </p>
+            </div>
+            <div className="h-px w-full bg-emerald-400/20" aria-hidden />
+            <div className="space-y-3">
+              <h3 className="text-2xl font-semibold text-white">Data Analyst / Administrador SIG</h3>
+              <p className="text-sm font-medium uppercase tracking-[0.25em] text-emerald-300/80">
+                Servicios Industriales y Marítimos S.A.S · Mar 2019 – Jul 2020
+              </p>
+              <p className="text-base leading-relaxed text-emerald-100/75">
+                Lideré la administración de indicadores estratégicos y el análisis de datos complejos utilizando Python, Power BI y bases
+                de datos relacionales. <br />
+                <br />
+                Ejecuté estrategias de Business Analytics , extrayendo insights para analizar los impactos en los programas de formación
+                de personal. <br />
+                <br />
+                Planificación de Mantenimiento : "Mejoré la planificación del mantenimiento preventivo mediante modelos de datos,
+                incrementando la disponibilidad de activos en un 20% <br />
+                <br />
+                Migración desde Excel : "Lideré la migración de sistemas operativos desde archivos Excel hacia MySQL, eliminando el
+                100% de las duplicidades de datos y reduciendo los errores manuales de carga en un 80%
               </p>
             </div>
           </div>

@@ -27,7 +27,7 @@ export function Section({
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="relative z-10 w-full max-w-6xl rounded-[48px] border border-white/5 bg-[#020305] p-12 text-left shadow-[0_70px_140px_-90px_rgba(5,8,15,0.95)] sm:p-16">
+      <div className="relative z-10 w-full max-w-6xl rounded-[48px] border border-white/5 bg-[#020305] p-12 text-left shadow-[0_70px_140px_-90px_rgba(5,8,15,0.95)] sm:p-16 max-h-[85vh] overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-emerald-500/20 [&::-webkit-scrollbar-thumb]:rounded-full">
         <div className="flex items-center gap-4 text-emerald-300/80">
           <span className="h-px w-10 bg-emerald-400/60" aria-hidden />
           <span className="text-xs uppercase tracking-[0.4em]">{eyebrow}</span>

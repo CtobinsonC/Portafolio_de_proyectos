@@ -18,7 +18,7 @@ export default async function DataAnalysisPage() {
                     Volver
                 </Link>
                 <span className="text-sm uppercase tracking-[0.4em] text-sky-200/80">
-                    Análisis de Datos
+                    Ingenieria de datos
                 </span>
             </header>
 
